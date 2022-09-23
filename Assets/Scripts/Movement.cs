@@ -71,6 +71,10 @@ public class Movement : MonoBehaviour
                 animator.SetBool("tiltForward", false);
                 animator.SetBool("tiltBackwards", true);
             }
+            else {
+                animator.SetBool("tiltForward", false);
+                animator.SetBool("tiltBackwards", false);
+            }
         }
 
         // check if player is grounded - colliding with groundLayer
